@@ -17,7 +17,7 @@ This app allows users to increment, decrement, and reset a counter using buttons
 
 ## 📸 Screenshot
 
-![Counter Screenshot](Counter-Ang/Screenshot%202025-07-06%20160031.png)
+![Counter Screenshot](Screenshot%202025-07-06%20160031.png)
 
 
 ## 📂 Project Structure
