@@ -17,7 +17,10 @@ This app allows users to increment, decrement, and reset a counter using buttons
 
 ## 📸 Screenshot
 
-> *(Counter-Ang/Screenshot 2025-07-06 160031.png)*
+> ## 📸 Screenshot
+
+![Counter Screenshot](Counter-Ang/Screenshot 2025-07-06 160031.png)
+
 
 ## 📂 Project Structure
 
