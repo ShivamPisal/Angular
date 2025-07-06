@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+p{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#decrement{
+    background-color: red;
+    color: white;
+    width: 12rem;
+    height: 5rem;
+    font-size: larger;
+}
+#reset{
+    background-color: rgb(122, 122, 255);
+    color: white;
+    width: 12rem;
+    height: 5rem;
+    font-size: larger;
+}
+#increment{
+    background-color: green;
+    color: white;
+    width: 12rem;
+    height: 5rem;
+    font-size: larger;
+}
