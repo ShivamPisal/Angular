@@ -8,10 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  color="green";
+   fruits = ['Apple', 'Banana', 'Mango', 'Orange'];
 
-  handleColor(val:string){
-    this.color=val;
-  }
 
 }
