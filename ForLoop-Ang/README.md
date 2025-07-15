@@ -1,59 +1,39 @@
-# IfElseInAngular
+# Angular `@for` — Modern Loop Syntax (Angular 17+)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+This README provides a brief overview of Angular’s modern `@for` loop syntax introduced in Angular 17 and supported in Angular 18 and 19.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📘 Overview
 
-```bash
-ng serve
-```
+`@for` is a new control flow block used to iterate over items in a list directly within the template. It offers a clean and readable syntax for displaying repeated elements.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ✅ Key Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Uses a block-based structure.
+- Loop variables like `index`, `first`, `last`, and `even` are supported.
+- Makes template code more structured and easier to follow.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🔄 Compatibility
 
-```bash
-ng generate --help
-```
+- **Angular 17:** Available when enabled in configuration.
+- **Angular 18+:** Enabled by default.
+- **Angular 19:** Fully supported.
 
-## Building
+---
 
-To build the project run:
+## 🛠️ Usage Notes
 
-```bash
-ng build
-```
+- Use `@for (item of items)` to loop through arrays or iterable values.
+- Works naturally with both static and dynamic lists.
+- Supports inline conditions inside the loop if needed.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🖼️ Demo Screenshot
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![Angular @for Demo](Screenshot.png)
