@@ -1,36 +1,7 @@
-<style>
-  div {
-    border: 2px solid black;
+<h1>For Loop in the angular</h1>
+<h2>Fruit List with Index</h2>
+<ul>
+  @for (fruit of fruits; let i = $index; track fruit) {
+    <li>{{ i+1 }} - {{ fruit }}</li>
   }
-</style>
-<h1>Switch Case</h1>
-
-@switch (color) {
-
-@case ('red') {
-<div style="background-color: red; color:white; width:200px; height: 200px"></div>
-}
-@case ('yellow') {
-<div style="background-color: yellow; color:white; width:200px; height: 200px"></div>
-}
-@case ('blue') {
-  <div style="background-color: blue; color:white; width:200px; height: 200px"></div>
-}
-@case ('green') {
-  <div style="background-color: green; color:white; width:200px; height: 200px"></div>
-}
-@default {
-  <div style="background-color: black; color:white; width:200px; height: 200px"></div>
-}
-}
-
-<button (click)="handleColor('red')" style="background-color:red; width: 100px; height:50px; margin:30px; color:white;">
-  Change to red</button>
-<button (click)="handleColor('yellow')" style="background-color:yellow; width: 100px; height:50px; margin:30px"> Change
-  to red</button>
-<button (click)="handleColor('blue')"
-  style="background-color:blue; width: 100px; height:50px; margin:30px; color:white;"> Change to red</button>
-<button (click)="handleColor('green')"
-  style="background-color:green; width: 100px; height:50px; margin:30px; color:white;"> Change to red</button>
-<button (click)="handleColor('black')"
-  style="background-color:black; width: 100px; height:50px; margin:30px; color:white;"> Change to red</button>
+</ul>
