@@ -5,23 +5,21 @@
 </style>
 <h1>Switch Case</h1>
 
-@switch (color) {
 
-@case ('red') {
-<div style="background-color: red; color:white; width:200px; height: 200px"></div>
+@if (color=="red") {
+  <div style="background-color: red; color:white; width:200px; height: 200px"></div>
 }
-@case ('yellow') {
-<div style="background-color: yellow; color:white; width:200px; height: 200px"></div>
+@else if (color=="yellow") {
+  <div style="background-color: yellow; color:white; width:200px; height: 200px"></div>
 }
-@case ('blue') {
+@else if (color=="blue") {
   <div style="background-color: blue; color:white; width:200px; height: 200px"></div>
 }
-@case ('green') {
+@else if (color=="green") {
   <div style="background-color: green; color:white; width:200px; height: 200px"></div>
 }
-@default {
+@else{
   <div style="background-color: black; color:white; width:200px; height: 200px"></div>
-}
 }
 
 <button (click)="handleColor('red')" style="background-color:red; width: 100px; height:50px; margin:30px; color:white;">
