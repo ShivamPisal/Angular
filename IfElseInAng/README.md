@@ -1,59 +1,63 @@
-# IfElseInAngular
+# Angular `@if` and `@else` — Modern Control Flow (Angular 17+ / 18 / 19)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+This README provides a quick explanation and demo of Angular’s modern control flow syntax using `@if` and `@else`, supported in Angular 17 and above.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📘 What is `@if`?
 
-```bash
-ng serve
-```
+Angular’s `@if` syntax is the modern alternative to the traditional `*ngIf` directive. It makes the template code cleaner and avoids the use of `ng-template`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+`@else` is used alongside `@if` to define a fallback block when the condition is false.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ✅ Key Points
 
-```bash
-ng generate component component-name
-```
+- `@if` replaces `*ngIf` for conditional rendering.
+- `@else` replaces `else` with `ng-template`.
+- Easier to read, especially with nested logic.
+- Available by default in Angular 18+.
+- In Angular 17, it must be enabled explicitly.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🧪 Demo
 
-## Building
+A component renders one of two messages based on a Boolean condition:
 
-To build the project run:
+- If the user is logged in, it displays:  
+  **✅ Welcome back, user!**
 
-```bash
-ng build
-```
+- If the user is not logged in, it displays:  
+  **❌ Please log in to continue.**
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+You can toggle the `isLoggedIn` variable in the component to test both outcomes.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🛠️ Setup (if using Angular 17)
 
-```bash
-ng test
-```
+To use `@if` in Angular 17, enable the new control flow syntax in the compiler settings or via standalone component setup.
 
-## Running end-to-end tests
+From Angular 18 onward, no extra configuration is needed.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 🚀 Compatibility
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- ✅ Angular 17 (requires enabling control flow)
+- ✅ Angular 18 (enabled by default)
+- ✅ Angular 19 (fully supported)
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📌 Note
+
+Use `@if` for simpler, cleaner templates. It reduces boilerplate and improves readability over the traditional `*ngIf` + `<ng-template>` approach.
+
+---
+
+## Demo
+
+![Demo](Screenshot.png)
