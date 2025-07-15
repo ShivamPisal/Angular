@@ -31,6 +31,6 @@ Angular’s new control flow syntax offers a cleaner and more readable way to ha
 
 ## 📌 Demo
 
-(Demo)[screenshot.png]
+![Demo](Screenshot.png)
 
 ---
