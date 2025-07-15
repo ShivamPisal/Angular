@@ -1,59 +1,54 @@
-# IfElseInAngular
+# Angular `@switch`, `@case`, and `@default` — Modern Control Flow (Angular 17+)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+This README provides a basic overview of Angular’s modern `@switch` control flow syntax, introduced in Angular 17 and continued in Angular 18 and 19.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📘 Overview
 
-```bash
-ng serve
-```
+Angular’s new control flow syntax introduces `@switch`, `@case`, and `@default` as a cleaner alternative to the traditional `ngSwitch`, `ngSwitchCase`, and `ngSwitchDefault`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ✅ Key Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `@switch` replaces `ngSwitch`.
+- `@case` replaces `ngSwitchCase`.
+- `@default` replaces `ngSwitchDefault`.
+- More intuitive, readable, and similar to regular JavaScript `switch-case`.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🔄 Compatibility
 
-```bash
-ng generate --help
-```
+- **Angular 17:** Optional — must be enabled via configuration.
+- **Angular 18+:** Enabled by default.
+- **Angular 19:** Fully supported and recommended.
 
-## Building
+---
 
-To build the project run:
+## 🧠 Benefits
 
-```bash
-ng build
-```
+- Modern, block-based syntax with better readability.
+- No need to rely on structural directives.
+- Easier to follow and write nested switch-case logic.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🛠️ Usage Notes
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Available only in Angular 17 and above.
+- In Angular 17, you need to explicitly enable the new control flow.
+- From Angular 18 onward, it is available by default.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📌 Reminder
 
-For end-to-end (e2e) testing, run:
+This new syntax offers significant improvements in clarity and maintainability over the old `ngSwitch` system. If you're using Angular 17, make sure to enable it in your build or standalone app setup.
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🖼️ Demo Screenshot
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![Angular @switch Demo](Screenshot.png)
